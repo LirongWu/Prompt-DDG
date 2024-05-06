@@ -1,0 +1,18 @@
+name: Prompt-DDG
+channels:
+  - pytorch
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # PyTorch dependencies, you may change to your preferred version.
+  - pytorch==1.8.1
+  - cudatoolkit=11.3
+
+  # Others
+  - pandas==1.2.4
+  - numpy==1.20.1
+  - tqdm==4.59.0
+  - biopython==1.79
+  - scikit-learn==0.24.1
