@@ -54,6 +54,13 @@ python -B train.py --ckpt_path ../trained_models/ddg_model.ckpt
 If you are interested in our repository and our paper, please cite the following paper:
 
 ```
+@article{wu2024learning,
+  title={Learning to Predict Mutation Effects of Protein-Protein Interactions by Microenvironment-aware Hierarchical Prompt Learning},
+  author={Wu, Lirong and Tian, Yijun and Lin, Haitao and Huang, Yufei and Li, Siyuan and Chawla, Nitesh V and Li, Stan Z},
+  journal={arXiv preprint arXiv:2405.10348},
+  year={2024}
+}
+
 @article{wu2024mape,
   title={MAPE-PPI: Towards Effective and Efficient Protein-Protein Interaction Prediction via Microenvironment-Aware Protein Embedding},
   author={Wu, Lirong and Tian, Yijun and Huang, Yufei and Li, Siyuan and Lin, Haitao and Chawla, Nitesh V and Li, Stan Z},
