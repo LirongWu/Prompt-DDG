@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
     for epoch in range(1, args.max_epoch+1):
         train(epoch)
-        if epoch % args.val_freg == 0:
+        if epoch % args.val_freq == 0:
             metrics = validate()
     torch.save(cv_mgr.state_dict(), os.path.join(save_dir, 'checkpoint', f'ddg_model.ckpt'))
 
