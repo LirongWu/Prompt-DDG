@@ -1,5 +1,4 @@
 import os
-import nni
 import csv
 import time
 import json
@@ -169,7 +168,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     param_s = args.__dict__
     param = json.loads(open("../configs/param_configs.json", 'r').read())
-    param.update(nni.get_next_parameter())
     args = argparse.Namespace(**param)
     config, _ = load_config('../data/7FAE_RBD_Fv_mutation.yml')
 
@@ -223,7 +221,6 @@ if __name__ == '__main__':
     best_valid_metric = metrics[0][1] + metrics[0][2] - metrics[0][3] - metrics[0][4] + metrics[0][5] + metrics[0][6] + metrics[0][7]
 
 
-    nni.report_final_result(best_valid_metric)
     outFile = open('../PerformMetrics.csv','a+', newline='')
     writer = csv.writer(outFile, dialect='excel')
 

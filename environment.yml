@@ -16,3 +16,4 @@ dependencies:
   - tqdm==4.59.0
   - biopython==1.79
   - scikit-learn==0.24.1
+  - easydict==1.9 
