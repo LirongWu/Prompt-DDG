@@ -189,7 +189,7 @@ if __name__ == '__main__':
     cv_mgr = CrossValidation(config=args, num_cvfolds=args.num_cvfolds, model_factory=DDG_RDE_Network).to(device)
 
     if param_s['ckpt_path'] is not None:
-        args.pre_epoch = args.max_epoch = 1
+        args.max_epoch = 1
 
     if args.pre_epoch != 0:
 
